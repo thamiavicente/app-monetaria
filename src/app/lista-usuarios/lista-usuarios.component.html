@@ -1,0 +1,31 @@
+<div class="container mt-3">
+    <table class="table">
+        <tr class="table-primary">
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Senha</th>
+            <th>CPF</th>
+            <th>ID</th>
+            <th></th>
+        </tr>
+
+        <tr *ngFor="let usuario of listaUsuarios">
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.senha}}</td>
+            <td>{{usuario.cpf}}</td>
+            <td>{{usuario.id}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="deletarUsuario(usuario.id)">Deletar</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="container mt-5">
+    <form>
+        <input type="text" class="form-control mb-3" id="nome" placeholder="Nome">
+        <input type="text" class="form-control mb-3" id="email" placeholder="Email">
+        <input type="text" class="form-control mb-3" id="senha" placeholder="Senha">
+        <input type="text" class="form-control" id="cpf" placeholder="CPF">
+    </form>
+</div>

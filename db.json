@@ -1,0 +1,25 @@
+{
+  "usuarios": [
+    {
+      "nome": "Ivone",
+      "email": "ivone@gmail.com",
+      "senha": "123456",
+      "cpf": "12345687822",
+      "id": 1
+    },
+    {
+      "nome": "Rita Lee",
+      "email": "lee@gmail.com",
+      "senha": "123456",
+      "cpf": "18945687822",
+      "id": 4
+    }
+  ],
+  "contas": [
+    {
+      "saldo": 1000,
+      "idUsuario": 1,
+      "id": 1
+    }
+  ]
+}
